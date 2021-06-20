@@ -2,6 +2,7 @@
 
 
 public class Sedan : Car , VehicleWithRoof
+bool Open=False;
 {
     public Sedan(int ID,int Color, int SerialNumber, int KeyId,int NumOfPassengers, int NumOfDoors, String WheelsPower, String Fuel){
         this.Id=ID;
@@ -28,9 +29,14 @@ public class Sedan : Car , VehicleWithRoof
        System.Console.WriteLine("switche on!");
     }    
     public bool OpenRoof(){
-        ///////////////////ASK ABOUT THIS
-          System.Console.WriteLine($"Sedan roof is ");
+          if(!Open){
+          System.Console.WriteLine($"Sedan roof is open");
+          Open=True;}
+          else {System.Console.WriteLine($"Sedan roof is closed");
+          Open=False;}
     }
+    
+    
     public  void toString(){
        System.Console.WriteLine($"Sedan key type {KeyId}, bus Fuel type {Fuel}");
     }
