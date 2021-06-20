@@ -26,14 +26,11 @@ public class SUV : Car , VehicleWithRoof
        System.Console.WriteLine("switche on!");
     }    
     public bool OpenRoof(){
-
-        /*
-
-        ///////////////////ASK ABOUT THIS
-
-
-        */
-          System.Console.WriteLine($"SUV roof is ");
+          if(!Open){
+          System.Console.WriteLine($"SUV roof is open");
+          Open=True;}
+          else {System.Console.WriteLine($"Suv roof is closed");
+          Open=False;}
     }
     public  void toString(){
        System.Console.WriteLine($"SUV key type {KeyId}, bus Fuel type {Fuel}");
