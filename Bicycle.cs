@@ -17,9 +17,7 @@ public Bicycle(int ID,int Color, int SerialNumber){
     public  void Stop(){
        System.Console.WriteLine("STOP!");
     }
-    public void Switch(){
-       System.Console.WriteLine("switche on!");
-    }    
+
     public  void toString(){
        System.Console.WriteLine($"Bicycle Id is " +Id);
     }
