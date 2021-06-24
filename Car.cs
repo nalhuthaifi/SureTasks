@@ -1,4 +1,6 @@
-
+using System;
+namespace MainCode
+{
 abstract class Car : Vehicle 
 {
     public abstract int KeyId;
@@ -8,4 +10,5 @@ abstract class Car : Vehicle
     public abstract String Fuel;
     public abstract void Switch();
  //   public abstract bool AirbagFacilition();
+}
 }
