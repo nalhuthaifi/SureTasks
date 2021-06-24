@@ -1,3 +1,7 @@
+
+using System;
+namespace MainCode
+{
 public class Bicycle : Motorcycle{
 public Bicycle(int ID,int Color, int SerialNumber){
         this.Id=ID;
@@ -22,4 +26,4 @@ public Bicycle(int ID,int Color, int SerialNumber){
        System.Console.WriteLine($"Bicycle Id is " +Id);
     }
     
-}
+}}
