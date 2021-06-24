@@ -1,4 +1,6 @@
-
+using System;
+namespace MainCode
+{
 public class Bus : Car 
 {
     public Bus(int ID,int Color, int SerialNumber, int KeyId,int NumOfPassengers, int NumOfDoors, String WheelsPower, String Fuel){
@@ -29,4 +31,4 @@ public class Bus : Car
        System.Console.WriteLine($"Bus key type {KeyId}, bus Fuel type {Fuel}");
     }
     
-}
+}}
